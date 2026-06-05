@@ -26,7 +26,7 @@ namespace DWIPS\Aids {
          */
         protected function DWSendDebug(string $Message, string $Data, int $Format, $DebugLevel): bool {
             $debug = $this->ReadPropertyInteger ( "DebugLevel" );
-            if($DebugLevel >= $debug){
+            if($DebugLevel <= $debug){
                 return parent::SendDebug ();
             }else{
                 return false;
