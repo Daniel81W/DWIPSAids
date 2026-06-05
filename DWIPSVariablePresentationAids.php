@@ -1,4 +1,4 @@
-<?php
+<?php /** @noinspection PhpUndefinedConstantInspection */
 
 /**
  * @package       DWIPS.Aids
@@ -52,6 +52,26 @@ namespace DWIPS\Aids {
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' K',
             'DIGITS' => 1
+        ];
+        
+        /**
+         * Summary of humidityAbs_presentation
+         * @var array
+         */
+        protected static $humidityAbs_presentation = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' g/m³',
+            'DIGITS' => 1
+        ];
+        
+        /**
+         * Summary of humidityRel_presentation
+         * @var array
+         */
+        protected static $humidityRel_presentation = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' %',
+            'DIGITS' => 0
         ];
 
 		protected static $target_temp_slider_presentation = [
