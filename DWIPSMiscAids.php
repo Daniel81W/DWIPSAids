@@ -32,6 +32,21 @@ namespace DWIPS\Aids {
                 return false;
             }
         }
+        
+        /**
+         * @param string $dataString
+         * @param string $seperator
+         * @param string $keySeperator
+         * @return array
+         */
+        protected function explodeWithKeys ( string $dataString, string $seperator, string $keySeperator ) : array {
+            $data = array ();
+            foreach ( explode ( $seperator, $dataString ) as $cLine ) {
+                list ( $cKey, $cValue ) = explode ( $keySeperator, $cLine, 2 );
+                $data[ $cKey ] = $cValue;
+            }
+            return $data;
+        }
     }
 }
 ?>
