@@ -41,6 +41,18 @@ namespace DWIPS\Aids {
 			'SUFFIX' => ' °C',
 			'DIGITS' => 1
 		];
+        
+        protected static $temp_presentation_f = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' °F',
+            'DIGITS' => 1
+        ];
+        
+        protected static $temp_presentation_k = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' K',
+            'DIGITS' => 1
+        ];
 
 		protected static $target_temp_slider_presentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_SLIDER,

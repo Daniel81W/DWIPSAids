@@ -27,7 +27,24 @@ namespace DWIPS\Aids {
         {
             $this->MaintainVariable($Ident, "", 0, "", 0, false);
         }
-
+        
+        /**
+         * Creates a Variable and configures it.
+         * *
+         * * @param int $Ident Ident for the Variable.
+         * * @param string $Name Name of the variable.
+         * * @param int $VarType Taype of the variable.
+         * * @param mixed $Presentation Presentation of the variable.
+         */
+        protected function CreateVariable(string $Ident, string $Name, int $VarType, mixed $Presentation, int $Position, bool $ActionEnabled = false): bool {
+            $ret = $this->MaintainVariable($Ident, $this->Translate($Name), $VarType, $Presentation, $Position, true);
+            if($ActionEnabled){
+                $this->EnableAction($Ident);
+            }else{
+                $this->DisableAction($Ident);
+            }
+            return $ret;
+        }
 
         /**
          * Creates or updates a Variable and configures it.
