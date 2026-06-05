@@ -19,12 +19,12 @@ namespace DWIPS\Aids {
         /**
          * CSends Debug messages, if selected Debug level is higher or same height as message.
          * *
-         * * @param int $Message
+         * * @param string $Message
          * * @param string $Data
          * * @param int $Format
-         * * @param mixed $DebugLevel Debug level of the message.
+         * * @param int $DebugLevel Debug level of the message.
          */
-        protected function DWSendDebug(string $Message, string $Data, int $Format, $DebugLevel): bool {
+        protected function DWSendDebug(string $Message, string $Data, int $Format, int $DebugLevel): bool {
             $debug = $this->ReadPropertyInteger ( "DebugLevel" );
             if($DebugLevel <= $debug){
                 return parent::SendDebug ($Message, $Data, $Format);
@@ -35,42 +35,41 @@ namespace DWIPS\Aids {
         
         /**
          * @param string $dataString
-         * @param string $seperator
-         * @param string $keySeperator
+         * @param string $separator
+         * @param string $keySeparator
          * @return array
          */
-        protected function explodeWithKeys ( string $dataString, string $seperator, string $keySeperator ) : array {
+        protected function explodeWithKeys ( string $dataString, string $separator, string $keySeparator ) : array {
             $data = array ();
-            foreach ( explode ( $seperator, $dataString ) as $cLine ) {
-                list ( $cKey, $cValue ) = explode ( $keySeperator, $cLine, 2 );
+            foreach ( explode ( $separator, $dataString ) as $cLine ) {
+                list ( $cKey, $cValue ) = explode ( $keySeparator, $cLine, 2 );
                 $data[ $cKey ] = $cValue;
             }
             return $data;
         }
         
-        protected function convertTempFtoC(float $tempIn, int $precision) : float{
+        protected function convertTempFtoC(float $tempIn) : float{
             return ( $tempIn - 32 ) / 1.8;
         }
         
-        protected function convertTempCtoF(float $tempIn, int $precision) : float{
+        protected function convertTempCtoF(float $tempIn) : float{
             return $tempIn * 1.8 + 32;
         }
         
-        protected function convertTempCtoK(float $tempIn, int $precision) : float{
+        protected function convertTempCtoK(float $tempIn) : float{
             return $tempIn + 273.15;
         }
         
-        protected function convertTempKtoC(float $tempIn, int $precision) : float{
+        protected function convertTempKtoC(float $tempIn) : float{
             return $tempIn - 273.15;
         }
         
-        protected function convertTempFtoK(float $tempIn, int $precision) : float{
+        protected function convertTempFtoK(float $tempIn) : float{
             return ( $tempIn - 32 ) / 1.8 + 273.15;
         }
         
-        protected function convertTempKtoF(float $tempIn, int $precision) : float{
+        protected function convertTempKtoF(float $tempIn) : float{
             return ($tempIn - 273.15) * 1.8 + 32;
         }
     }
 }
-?>
