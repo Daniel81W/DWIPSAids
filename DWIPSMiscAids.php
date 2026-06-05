@@ -71,5 +71,17 @@ namespace DWIPS\Aids {
         protected function convertTempKtoF(float $tempIn) : float{
             return ($tempIn - 273.15) * 1.8 + 32;
         }
+        
+        protected function convertMPH2KMH(float $MilesPerHour): float{
+            return $MilesPerHour * 1.609344;
+        }
+        
+        protected function convertMPH2MS(float $MilesPerHour): float{
+            return $MilesPerHour * 1.609344 / 3.6;
+        }
+        
+        protected function convertMPH2KT(float $MilesPerHour): float{
+            return $MilesPerHour * 1.609344 / 1.852;
+        }
     }
 }
