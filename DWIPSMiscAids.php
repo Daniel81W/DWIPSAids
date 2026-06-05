@@ -47,6 +47,30 @@ namespace DWIPS\Aids {
             }
             return $data;
         }
+        
+        protected function convertTempFtoC(float $tempIn, int $precision) : float{
+            return ( $tempIn - 32 ) / 1.8;
+        }
+        
+        protected function convertTempCtoF(float $tempIn, int $precision) : float{
+            return $tempIn * 1.8 + 32;
+        }
+        
+        protected function convertTempCtoK(float $tempIn, int $precision) : float{
+            return $tempIn + 273.15;
+        }
+        
+        protected function convertTempKtoC(float $tempIn, int $precision) : float{
+            return $tempIn - 273.15;
+        }
+        
+        protected function convertTempFtoK(float $tempIn, int $precision) : float{
+            return ( $tempIn - 32 ) / 1.8 + 273.15;
+        }
+        
+        protected function convertTempKtoF(float $tempIn, int $precision) : float{
+            return ($tempIn - 273.15) * 1.8 + 32;
+        }
     }
 }
 ?>
