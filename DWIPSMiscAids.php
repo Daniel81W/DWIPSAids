@@ -48,47 +48,47 @@ namespace DWIPS\Aids {
             return $data;
         }
         
-        protected function convertTempFtoC(float $tempIn) : float{
+        protected function convertTemperatureFtoC( float $tempIn) : float{
             return ( $tempIn - 32 ) / 1.8;
         }
         
-        protected function convertTempCtoF(float $tempIn) : float{
+        protected function convertTemperatureCtoF( float $tempIn) : float{
             return $tempIn * 1.8 + 32;
         }
         
-        protected function convertTempCtoK(float $tempIn) : float{
+        protected function convertTemperatureCtoK( float $tempIn) : float{
             return $tempIn + 273.15;
         }
         
-        protected function convertTempKtoC(float $tempIn) : float{
+        protected function convertTemperatureKtoC( float $tempIn) : float{
             return $tempIn - 273.15;
         }
         
-        protected function convertTempFtoK(float $tempIn) : float{
+        protected function convertTemperatureFtoK( float $tempIn) : float{
             return ( $tempIn - 32 ) / 1.8 + 273.15;
         }
         
-        protected function convertTempKtoF(float $tempIn) : float{
+        protected function convertTemperatureKtoF( float $tempIn) : float{
             return ($tempIn - 273.15) * 1.8 + 32;
         }
         
-        protected function convertMPH2KMH(float $MilesPerHour): float{
+        protected function convertVelocityMPH2KMH( float $MilesPerHour): float{
             return $MilesPerHour * 1.609344;
         }
         
-        protected function convertMPH2MS(float $MilesPerHour): float{
+        protected function convertVelocityMPH2MS( float $MilesPerHour): float{
             return $MilesPerHour * 1.609344 / 3.6;
         }
         
-        protected function convertMPH2KT(float $MilesPerHour): float{
+        protected function convertVelocityMPH2KT( float $MilesPerHour): float{
             return $MilesPerHour * 1.609344 / 1.852;
         }
         
-        protected function convertINHG2MBAR(float $Pressure):float{
+        protected function convertPressureINHG2MBAR(float $Pressure):float{
             return $Pressure  / 0.02952998751;
         }
         
-        protected function convertINHG2MMHG(float $Pressure):float{
+        protected function convertPressureINHG2MMHG( float $Pressure):float{
             return $Pressure  * 25.4;
         }
     }
