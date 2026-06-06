@@ -16,7 +16,7 @@ namespace DWIPS\Aids {
 	trait DWIPSVariablePresentationAids
 	{
 
-		protected static $datePresentation = [
+		protected static array $datePresentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_DATE_TIME,
 			'DATE' => 1,
 			'DAY_OF_THE_WEEK' => false,
@@ -24,7 +24,7 @@ namespace DWIPS\Aids {
 			'TIME' => 0
 		];
 
-		protected static $dateTimePresentation = [
+		protected static array $dateTimePresentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_DATE_TIME,
 			'DATE' => 1,
 			'DAY_OF_THE_WEEK' => false,
@@ -36,7 +36,7 @@ namespace DWIPS\Aids {
 		 * Summary of temp_presentation
 		 * @var array
 		 */
-		protected static $temp_presentation = [
+		protected static array $temp_presentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
 			'SUFFIX' => ' °C',
 			'DIGITS' => 1
@@ -81,7 +81,7 @@ namespace DWIPS\Aids {
         protected static $airpressure_presentation_inhg = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' inHg',
-            'DIGITS' => 0,
+            'DIGITS' => 2,
             'MIN' => 25,
             'MAX' => 33
         ];
