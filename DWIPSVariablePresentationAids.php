@@ -81,7 +81,9 @@ namespace DWIPS\Aids {
         protected static $airpressure_presentation_inhg = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' inHg',
-            'DIGITS' => 0
+            'DIGITS' => 0,
+            'MIN' => 25,
+            'MAX' => 33
         ];
         
         
@@ -92,7 +94,9 @@ namespace DWIPS\Aids {
         protected static $airpressure_presentation_mmhg = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' mmHg',
-            'DIGITS' => 0
+            'DIGITS' => 0,
+            'MIN' => 640,
+            'MAX' => 850
         ];
         
         
@@ -103,7 +107,9 @@ namespace DWIPS\Aids {
         protected static $airpressure_presentation_mbar = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' mbar',
-            'DIGITS' => 0
+            'DIGITS' => 0,
+            'MIN' => 850,
+            'MAX' => 1100
         ];
         
         
@@ -114,7 +120,9 @@ namespace DWIPS\Aids {
         protected static $airpressure_presentation_hpa = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' hPa',
-            'DIGITS' => 0
+            'DIGITS' => 0,
+            'MIN' => 850,
+            'MAX' => 1100
         ];
         
 		protected static $target_temp_slider_presentation = [

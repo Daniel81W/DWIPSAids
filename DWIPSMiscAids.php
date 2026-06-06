@@ -83,5 +83,13 @@ namespace DWIPS\Aids {
         protected function convertMPH2KT(float $MilesPerHour): float{
             return $MilesPerHour * 1.609344 / 1.852;
         }
+        
+        protected function convertINHG2MBAR(float $Pressure):float{
+            return $Pressure  / 0.02952998751;
+        }
+        
+        protected function convertINHG2MMHG(float $Pressure):float{
+            return $Pressure  * 25.4;
+        }
     }
 }
