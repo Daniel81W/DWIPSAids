@@ -174,6 +174,50 @@ namespace DWIPS\Aids {
             'MAX' => 50
         ];
         
+        /**
+         * Summary of humidityRel_presentation
+         * @var array
+         */
+        protected static array $wind_direction_presentation_deg = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' °',
+            'DIGITS' => 0,
+            'MIN' => 0,
+            'MAX' => 360
+        ];
+        
+        /**
+         * Summary of humidityRel_presentation
+         * @var array
+         */
+        protected static array $wind_direction_presentation_card = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' °',
+            'DIGITS' => 0,
+            'MIN' => 0,
+            'MAX' => 360,
+			'INTERVALS_ACTIVE' => true,
+			'INTERVALS' => "[
+					{\"IntervalMinValue\":0,\"IntervalMaxValue\":11,\"ConstantActive\":true,\"ConstantValue\":\"N\"},
+					{\"IntervalMinValue\":12,\"IntervalMaxValue\":33,\"ConstantActive\":true,\"ConstantValue\":\"NNE\"},
+					{\"IntervalMinValue\":34,\"IntervalMaxValue\":56,\"ConstantActive\":true,\"ConstantValue\":\"NE\"},
+					{\"IntervalMinValue\":57,\"IntervalMaxValue\":78,\"ConstantActive\":true,\"ConstantValue\":\"ENE\"},
+					{\"IntervalMinValue\":79,\"IntervalMaxValue\":101,\"ConstantActive\":true,\"ConstantValue\":\"E\"},
+					{\"IntervalMinValue\":102,\"IntervalMaxValue\":123,\"ConstantActive\":true,\"ConstantValue\":\"ESE\"},
+					{\"IntervalMinValue\":124,\"IntervalMaxValue\":146,\"ConstantActive\":true,\"ConstantValue\":\"SE\"},
+					{\"IntervalMinValue\":147,\"IntervalMaxValue\":168,\"ConstantActive\":true,\"ConstantValue\":\"SSE\"},
+					{\"IntervalMinValue\":169,\"IntervalMaxValue\":191,\"ConstantActive\":true,\"ConstantValue\":\"S\"},
+					{\"IntervalMinValue\":192,\"IntervalMaxValue\":213,\"ConstantActive\":true,\"ConstantValue\":\"SSW\"},
+					{\"IntervalMinValue\":214,\"IntervalMaxValue\":236,\"ConstantActive\":true,\"ConstantValue\":\"SW\"},
+					{\"IntervalMinValue\":237,\"IntervalMaxValue\":258,\"ConstantActive\":true,\"ConstantValue\":\"WSW\"},
+					{\"IntervalMinValue\":259,\"IntervalMaxValue\":281,\"ConstantActive\":true,\"ConstantValue\":\"W\"},
+					{\"IntervalMinValue\":282,\"IntervalMaxValue\":303,\"ConstantActive\":true,\"ConstantValue\":\"WNW\"},
+					{\"IntervalMinValue\":304,\"IntervalMaxValue\":326,\"ConstantActive\":true,\"ConstantValue\":\"NW\"},
+					{\"IntervalMinValue\":327,\"IntervalMaxValue\":348,\"ConstantActive\":true,\"ConstantValue\":\"NNW\"},
+					{\"IntervalMinValue\":349,\"IntervalMaxValue\":360,\"ConstantActive\":true,\"ConstantValue\":\"N\"}
+				]",
+        ];
+        
 		protected static array $target_temp_slider_presentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_SLIDER,
 			'MIN' => 5,
@@ -248,7 +292,7 @@ namespace DWIPS\Aids {
 					{\"IntervalMinValue\":2,\"IntervalMaxValue\":2,\"ConstantActive\":true,\"ConstantValue\":\"Bypass\",\"IconValue\":\"building-user\",\"IconActive\":true,\"Color\":16711680},
 					{\"IntervalMinValue\":3,\"IntervalMaxValue\":3,\"ConstantActive\":true,\"ConstantValue\":\"Deicing\",\"IconValue\":\"building-user\",\"IconActive\":true,\"Color\":16711680}
 				]",
-			'DIGITS' => 1
+			'DIGITS' => 0
 		];
 
 		protected static array $kwl_partialBypass_presentation = [
