@@ -125,6 +125,55 @@ namespace DWIPS\Aids {
             'MAX' => 1100
         ];
         
+        
+        /**
+         * Summary of humidityRel_presentation
+         * @var array
+         */
+        protected static array $wind_velocity_presentation_kmh = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' km/h',
+            'DIGITS' => 1,
+            'MIN' => 0,
+            'MAX' => 180
+        ];
+        
+        /**
+         * Summary of humidityRel_presentation
+         * @var array
+         */
+        protected static array $wind_velocity_presentation_mph = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' mph',
+            'DIGITS' => 1,
+            'MIN' => 0,
+            'MAX' => 110
+        ];
+        
+        /**
+         * Summary of humidityRel_presentation
+         * @var array
+         */
+        protected static array $wind_velocity_presentation_kn = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' kn',
+            'DIGITS' => 1,
+            'MIN' => 0,
+            'MAX' => 100
+        ];
+        
+        /**
+         * Summary of humidityRel_presentation
+         * @var array
+         */
+        protected static array $wind_velocity_presentation_ms = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' m/s',
+            'DIGITS' => 1,
+            'MIN' => 0,
+            'MAX' => 50
+        ];
+        
 		protected static array $target_temp_slider_presentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_SLIDER,
 			'MIN' => 5,
