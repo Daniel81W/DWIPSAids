@@ -42,13 +42,13 @@ namespace DWIPS\Aids {
 			'DIGITS' => 1
 		];
         
-        protected static $temp_presentation_f = [
+        protected static array $temp_presentation_f = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' °F',
             'DIGITS' => 1
         ];
         
-        protected static $temp_presentation_k = [
+        protected static array $temp_presentation_k = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' K',
             'DIGITS' => 1
@@ -58,7 +58,7 @@ namespace DWIPS\Aids {
          * Summary of humidityAbs_presentation
          * @var array
          */
-        protected static $humidityAbs_presentation = [
+        protected static array $humidityAbs_presentation = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' g/m³',
             'DIGITS' => 1
@@ -68,7 +68,7 @@ namespace DWIPS\Aids {
          * Summary of humidityRel_presentation
          * @var array
          */
-        protected static $humidityRel_presentation = [
+        protected static array $humidityRel_presentation = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' %',
             'DIGITS' => 0
@@ -78,7 +78,7 @@ namespace DWIPS\Aids {
          * Summary of humidityRel_presentation
          * @var array
          */
-        protected static $airpressure_presentation_inhg = [
+        protected static array $airpressure_presentation_inhg = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' inHg',
             'DIGITS' => 2,
@@ -91,7 +91,7 @@ namespace DWIPS\Aids {
          * Summary of humidityRel_presentation
          * @var array
          */
-        protected static $airpressure_presentation_mmhg = [
+        protected static array $airpressure_presentation_mmhg = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' mmHg',
             'DIGITS' => 0,
@@ -104,7 +104,7 @@ namespace DWIPS\Aids {
          * Summary of humidityRel_presentation
          * @var array
          */
-        protected static $airpressure_presentation_mbar = [
+        protected static array $airpressure_presentation_mbar = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' mbar',
             'DIGITS' => 0,
@@ -117,7 +117,7 @@ namespace DWIPS\Aids {
          * Summary of humidityRel_presentation
          * @var array
          */
-        protected static $airpressure_presentation_hpa = [
+        protected static array $airpressure_presentation_hpa = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' hPa',
             'DIGITS' => 0,
@@ -125,7 +125,7 @@ namespace DWIPS\Aids {
             'MAX' => 1100
         ];
         
-		protected static $target_temp_slider_presentation = [
+		protected static array $target_temp_slider_presentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_SLIDER,
 			'MIN' => 5,
 			'MAX' => 25,
@@ -136,7 +136,7 @@ namespace DWIPS\Aids {
 			'SUFFIX' => ' %'
 		];
 
-		protected static $fan_level_slider_presentation = [
+		protected static array $fan_level_slider_presentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_SLIDER,
 			'MIN' => 0,
 			'MAX' => 100,
@@ -152,12 +152,12 @@ namespace DWIPS\Aids {
 		 * Summary of fan_level_presentation
 		 * @var array
 		 */
-		protected static $fan_level_presentation = [
+		protected static array $fan_level_presentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
 			'SUFFIX' => ' %'
 		];
 
-		protected static $kwl_target_temp_slider_presentation = [
+		protected static array $kwl_target_temp_slider_presentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_SLIDER,
 			'MIN' => 5,
 			'MAX' => 25,
@@ -168,7 +168,7 @@ namespace DWIPS\Aids {
 			'SUFFIX' => ' °C'
 		];
 
-		protected static $kwl_mode_presentation = [
+		protected static array $kwl_mode_presentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_ENUMERATION,
 			'OPTIONS' => "[
 					{\"Value\":0,\"Caption\":\"Anwesend\",\"IconValue\":\"building-user\",\"IconActive\":true,\"Color\":16711680},
@@ -179,7 +179,7 @@ namespace DWIPS\Aids {
 		];
 
 
-		protected static $kwl_modepa_presentation = [
+		protected static array $kwl_modepa_presentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_ENUMERATION,
 			'OPTIONS' => "[
 					{\"Value\":false,\"Caption\":\"Anwesend\",\"IconValue\":\"building-user\",\"IconActive\":true,\"Color\":16711680},
@@ -188,7 +188,7 @@ namespace DWIPS\Aids {
 			'DIGITS' => 1
 		];
 
-		protected static $kwl_cellstate_presentation = [
+		protected static array $kwl_cellstate_presentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
 			'MIN' => 0,
 			'MAX' => 3,
@@ -202,7 +202,7 @@ namespace DWIPS\Aids {
 			'DIGITS' => 1
 		];
 
-		protected static $kwl_partialBypass_presentation = [
+		protected static array $kwl_partialBypass_presentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_ENUMERATION,
 			'OPTIONS' => "[
 					{\"Value\":0,\"Caption\":\"None\",\"IconValue\":\"\",\"IconActive\":true,\"Color\":16711680},
@@ -212,7 +212,7 @@ namespace DWIPS\Aids {
 			'DIGITS' => 0
 		];
 
-		protected static $kwl_bypassLocked_presentation = [
+		protected static array $kwl_bypassLocked_presentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_ENUMERATION,
 			'OPTIONS' => "[
 					{\"Value\":0,\"Caption\":\"open\",\"IconValue\":\"\",\"IconActive\":true,\"Color\":16711680},
@@ -221,7 +221,7 @@ namespace DWIPS\Aids {
 			'DIGITS' => 0
 		];
 
-		protected static $kwl_access_level_presentation = [
+		protected static array $kwl_access_level_presentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_ENUMERATION,
 			'OPTIONS' => "[
 					{\"Value\":0,\"Caption\":\"free\",\"IconValue\":\"building-user\",\"IconActive\":true,\"Color\":16711680},
@@ -232,4 +232,3 @@ namespace DWIPS\Aids {
 		];
 	}
 }
-?>
