@@ -73,7 +73,50 @@ namespace DWIPS\Aids {
             'SUFFIX' => ' %',
             'DIGITS' => 0
         ];
-
+        
+        /**
+         * Summary of humidityRel_presentation
+         * @var array
+         */
+        protected static $airpressure_presentation_inhg = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' inHg',
+            'DIGITS' => 0
+        ];
+        
+        
+        /**
+         * Summary of humidityRel_presentation
+         * @var array
+         */
+        protected static $airpressure_presentation_mmhg = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' mmHg',
+            'DIGITS' => 0
+        ];
+        
+        
+        /**
+         * Summary of humidityRel_presentation
+         * @var array
+         */
+        protected static $airpressure_presentation_mbar = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' mbar',
+            'DIGITS' => 0
+        ];
+        
+        
+        /**
+         * Summary of humidityRel_presentation
+         * @var array
+         */
+        protected static $airpressure_presentation_hpa = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' hPa',
+            'DIGITS' => 0
+        ];
+        
 		protected static $target_temp_slider_presentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_SLIDER,
 			'MIN' => 5,
