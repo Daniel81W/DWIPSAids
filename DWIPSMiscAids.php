@@ -91,5 +91,9 @@ namespace DWIPS\Aids {
         protected function convertPressureINHG2MMHG( float $Pressure):float{
             return $Pressure  * 25.4;
         }
+        
+        protected function convertLengthIN2MM(float $Length): float{
+            return $Length  * 25.4;
+        }
     }
 }
