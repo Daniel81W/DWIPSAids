@@ -16,11 +16,33 @@ namespace DWIPS\Aids {
     trait DWIPSConstants
     {
 
-        static $variableCount = 1;
-
-        protected const DWIPSVALLOX_MODE_PRESENT = 0;
-        protected const DWIPSVALLOX_MODE_ABSENT = 1;
-        protected const DWIPSVALLOX_MODE_BOOST = 2;
+        static int $variableCount = 1;
+    
+        public const int DWIPSVALLOX_MODE_PRESENT = 0;
+        protected const int DWIPSVALLOX_MODE_ABSENT = 1;
+        protected const int DWIPSVALLOX_MODE_BOOST = 2;
+        
+        
+        
+        public const int DWIPS_LENGTH_MM = 0;
+        public const int DWIPS_LENGTH_CM = 1;
+        public const int DWIPS_LENGTH_DM = 2;
+        public const int DWIPS_LENGTH_M = 3;
+        public const int DWIPS_LENGTH_KM = 4;
+        public const int DWIPS_LENGTH_IN = 5;
+        public const int DWIPS_LENGTH_FT = 6;
+        public const int DWIPS_LENGTH_YD = 7;
+    }
+    
+    enum DWIPS_Length : int {
+        case MM = 0;
+        case CM = 1;
+        case DM = 2;
+        case M = 3;
+        case KM = 4;
+        case IN = 5;
+        case FT = 6;
+        case YD = 7;
     }
 }
 ?>

@@ -15,7 +15,6 @@ namespace DWIPS\Aids {
      */
     trait DWIPSVariableAids
     {
-
         static $variableCount = 1;
 
         /**
@@ -80,4 +79,3 @@ namespace DWIPS\Aids {
         }  
     }
 }
-?>

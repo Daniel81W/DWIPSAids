@@ -178,6 +178,7 @@ namespace DWIPS\Aids {
          * Summary of humidityRel_presentation
          * @var array
          */
+        
         protected static array $wind_direction_presentation_deg = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' °',
