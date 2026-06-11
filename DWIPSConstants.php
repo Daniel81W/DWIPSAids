@@ -15,8 +15,6 @@ namespace DWIPS\Aids {
      */
     trait DWIPSConstants
     {
-
-        static int $variableCount = 1;
     
         public const int DWIPSVALLOX_MODE_PRESENT = 0;
         protected const int DWIPSVALLOX_MODE_ABSENT = 1;
