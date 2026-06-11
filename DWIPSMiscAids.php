@@ -125,8 +125,6 @@ namespace DWIPS\Aids {
                         case DWIPS_Length::YD:
                             $factor = 1 / ( 3 * 12 * 25.4 );
                             break;
-                        default:
-                            break;
                     }
                     break;
                 case DWIPS_Length::CM:
@@ -154,8 +152,6 @@ namespace DWIPS\Aids {
                             break;
                         case DWIPS_Length::YD:
                             $factor = 1 / ( 3 * 12 * 2.54 );
-                            break;
-                        default:
                             break;
                     }
                     break;
@@ -185,8 +181,6 @@ namespace DWIPS\Aids {
                         case DWIPS_Length::YD:
                             $factor = 10 / ( 3 * 12 * 2.54 );
                             break;
-                        default:
-                            break;
                     }
                     break;
                 case DWIPS_Length::M:
@@ -214,8 +208,6 @@ namespace DWIPS\Aids {
                             break;
                         case DWIPS_Length::YD:
                             $factor = 100 / ( 3 * 12 * 2.54 );
-                            break;
-                        default:
                             break;
                     }
                     break;
@@ -245,8 +237,6 @@ namespace DWIPS\Aids {
                         case DWIPS_Length::YD:
                             $factor = 100000 / ( 3 * 12 * 2.54 );
                             break;
-                        default:
-                            break;
                     }
                     break;
                 case DWIPS_Length::IN:
@@ -274,8 +264,6 @@ namespace DWIPS\Aids {
                             break;
                         case DWIPS_Length::YD:
                             $factor = 1 / ( 3 * 12 );
-                            break;
-                        default:
                             break;
                     }
                     break;
@@ -305,8 +293,6 @@ namespace DWIPS\Aids {
                         case DWIPS_Length::YD:
                             $factor = 1 / 3;
                             break;
-                        default:
-                            break;
                     }
                     break;
                 case DWIPS_Length::YD:
@@ -335,11 +321,7 @@ namespace DWIPS\Aids {
                         case DWIPS_Length::YD:
                             $factor = 1;
                             break;
-                        default:
-                            break;
                     }
-                    break;
-                default:
                     break;
             }
             return $Length * $factor;
