@@ -324,5 +324,15 @@ namespace DWIPS\Aids {
 				]",
 			'DIGITS' => 0
 		];
+        
+        protected static array $length_mm_presentation = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' mm'
+        ];
+        
+        protected static array $length_in_presentation = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' in'
+        ];
 	}
 }
