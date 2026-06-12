@@ -334,5 +334,18 @@ namespace DWIPS\Aids {
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' in'
         ];
+        
+        protected static array $light_w_m2_presentation = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' W/m²'
+        ];
+        protected static array $light_lx_presentation = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' lx'
+        ];
+        protected static array $light_fc_presentation = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' fc'
+        ];
 	}
 }
