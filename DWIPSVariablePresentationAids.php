@@ -17,12 +17,12 @@ namespace DWIPS\Aids {
 	{
         
         
-        protected static array $length_mm_presentation = [
+        protected static array $length_presentation_mm = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' mm'
         ];
         
-        protected static array $length_in_presentation = [
+        protected static array $length_presentation_in = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' in'
         ];
