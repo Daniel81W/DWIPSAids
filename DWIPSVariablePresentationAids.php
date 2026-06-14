@@ -15,7 +15,31 @@ namespace DWIPS\Aids {
 	 */
 	trait DWIPSVariablePresentationAids
 	{
-
+        
+        
+        protected static array $length_mm_presentation = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' mm'
+        ];
+        
+        protected static array $length_in_presentation = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' in'
+        ];
+        
+        protected static array $light_w_m2_presentation = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' W/m²'
+        ];
+        protected static array $light_lx_presentation = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' lx'
+        ];
+        protected static array $light_fc_presentation = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' fc'
+        ];
+        
 		protected static array $datePresentation = [
 			'PRESENTATION' => VARIABLE_PRESENTATION_DATE_TIME,
 			'DATE' => 1,
@@ -52,6 +76,34 @@ namespace DWIPS\Aids {
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' K',
             'DIGITS' => 1
+        ];
+        
+        /**
+         * Summary of temp_presentation
+         * @var array
+         */
+        protected static array $weather_temp_presentation = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' °C',
+            'DIGITS' => 1,
+            'MIN' => -20,
+            'MAX' => 40
+        ];
+        
+        protected static array $weather_temp_presentation_f = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' °F',
+            'DIGITS' => 1,
+            'MIN' => -4,
+            'MAX' => 104
+        ];
+        
+        protected static array $weather_temp_presentation_k = [
+            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+            'SUFFIX' => ' K',
+            'DIGITS' => 1,
+            'MIN' => 253,
+            'MAX' => 314
         ];
         
         /**
@@ -324,28 +376,5 @@ namespace DWIPS\Aids {
 				]",
 			'DIGITS' => 0
 		];
-        
-        protected static array $length_mm_presentation = [
-            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
-            'SUFFIX' => ' mm'
-        ];
-        
-        protected static array $length_in_presentation = [
-            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
-            'SUFFIX' => ' in'
-        ];
-        
-        protected static array $light_w_m2_presentation = [
-            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
-            'SUFFIX' => ' W/m²'
-        ];
-        protected static array $light_lx_presentation = [
-            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
-            'SUFFIX' => ' lx'
-        ];
-        protected static array $light_fc_presentation = [
-            'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
-            'SUFFIX' => ' fc'
-        ];
 	}
 }

@@ -76,6 +76,6 @@ namespace DWIPS\Aids {
 			    $ret = $this->RegisterMessage(IPS_GetObjectIDByIdent("Value", $this->ReadPropertyInteger($PropertyName)), VM_UPDATE);
 		    }
             return $ret;
-        }  
+        }
     }
 }

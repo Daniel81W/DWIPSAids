@@ -15,7 +15,6 @@ namespace DWIPS\Aids {
      */
     trait DWIPSConstants
     {
-    
         public const int DWIPSVALLOX_MODE_PRESENT = 0;
         protected const int DWIPSVALLOX_MODE_ABSENT = 1;
         protected const int DWIPSVALLOX_MODE_BOOST = 2;
