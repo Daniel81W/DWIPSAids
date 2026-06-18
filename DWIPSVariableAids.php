@@ -77,5 +77,6 @@ namespace DWIPS\Aids {
 		    }
             return $ret;
         }
+        
     }
 }

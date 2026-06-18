@@ -326,6 +326,5 @@ namespace DWIPS\Aids {
             }
             return $Length * $factor;
         }
-        
     }
 }

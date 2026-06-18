@@ -10,6 +10,7 @@
  */
 
 namespace DWIPS\Aids {
+    
     /**
      * Aiding functions for the work with Variables.
      */

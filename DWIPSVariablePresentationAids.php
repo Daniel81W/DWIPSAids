@@ -15,8 +15,6 @@ namespace DWIPS\Aids {
 	 */
 	trait DWIPSVariablePresentationAids
 	{
-        
-        
         protected static array $length_presentation_mm = [
             'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
             'SUFFIX' => ' mm'
