@@ -30,6 +30,8 @@ namespace DWIPS\Aids {
         public const int DWIPS_LENGTH_IN = 5;
         public const int DWIPS_LENGTH_FT = 6;
         public const int DWIPS_LENGTH_YD = 7;
+        
+        public const array TemperatureUnits = array(0 => '°C', 1 => '°F', 2 => 'K');
     }
     
     enum DWIPS_Length : int {
