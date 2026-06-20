@@ -45,4 +45,3 @@ namespace DWIPS\Aids {
         case YD = 7;
     }
 }
-?>
