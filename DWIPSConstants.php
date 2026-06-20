@@ -32,6 +32,8 @@ namespace DWIPS\Aids {
         public const int DWIPS_LENGTH_YD = 7;
         
         public const array TemperatureUnits = array(0 => '°C', 1 => '°F', 2 => 'K');
+        
+        public const array WindSpeedUnits = array(0 => 'km/h', 1 => 'm/s', 2 => 'mph', 3 => 'kn');
     }
     
     enum DWIPS_Length : int {
